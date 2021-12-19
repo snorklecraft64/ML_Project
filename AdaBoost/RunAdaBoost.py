@@ -139,6 +139,6 @@ with open('../data/test_final.csv', 'r') as f:
     X_test.append(list)
 
 y_test = pipe.predict(X_test)
-#print('ID,Prediction')
-#for i in range(len(y_test)):
-#  print(str(i+1) + ',' + str(y_test[i]))
+print('ID,Prediction')
+for i in range(len(y_test)):
+  print(str(i+1) + ',' + str(y_test[i]))
